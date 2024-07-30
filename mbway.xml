@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="gurupayment" method="upgrade">
+    <name>MBWAY</name>
+    <author>Your Name</author>
+    <authorEmail>your.email@example.com</authorEmail>
+    <authorUrl>www.yourwebsite.com</authorUrl>
+    <creationDate>June 13, 2024</creationDate>
+    <copyright>Your Company</copyright>
+    <version>1.0.0</version>
+    <description>PLG_MBWAY_PAYMENT_CUSTOM</description>
+
+    <files>
+        <filename plugin="mbway">mbway.php</filename>
+        <folder>language</folder>	
+	<folder>assets</folder>
+	<folder>fields</folder>
+	<filename>mbway-logo.png</filename>
+    	<filename>mbwayaudio.mp3</filename>
+    </files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/plg_gurupayment_mbway.ini</language>
+        <language tag="en-GB">language/en-GB/plg_gurupayment_mbway.sys.ini</language>
+	<language tag="pt-PT">language/pt-PT/plg_gurupayment_mbway.ini</language>
+    	<language tag="pt-PT">language/pt-PT/plg_gurupayment_mbway.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params" addfieldpath="/plugins/gurupayment/mbway/fields">
+            <fieldset name="basic">
+		<field name="mbway_label" type="text" default="MBWAY" label="PLG_NAME" description="" />
+                <field name="mbway_key" type="text" label="MBWAY Key" description="PLG_NAME_DESC" />
+		<field name="phishing_key" type="text" label="PLG_PHISHING" description="PLG_PHISHING_DESC" />
+		<field name="mbwaycallback" type="mbwaycallback" label="Callback Setup" description="" />
+            </fieldset>
+        </fields>
+    </config>
+   
+</extension>

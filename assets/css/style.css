@@ -1,0 +1,91 @@
+/* loader */
+
+.spinner-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* pay check */
+div#pay-check {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: Helvetica;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+    opacity: 0;
+}
+
+.circle {
+    stroke-dasharray: 597; 
+    stroke-dashoffset: 597;
+}
+
+svg .tick {
+    animation: tick .8s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: .95s;
+}
+
+svg .circle {
+    animation: circle 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    animation: title .6s ease-in-out;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.tick {
+    stroke-dasharray: 175; 
+    stroke-dashoffset: 175; 
+}
+
+@keyframes circle {
+    from {
+        stroke-dashoffset: 597; 
+    }
+    to {
+        stroke-dashoffset: 1194; 
+    }
+}
+
+@keyframes tick {
+    from {
+        stroke-dashoffset: 175; 
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes title {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+div#guru-component {
+    box-shadow: 0px 0px 7px 0px !important;
+    padding: 35px 35px 35px 35px;
+    border-radius: 4px;
+}
+div#timer {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+span#time {
+    color: #ff5259;
+    font-weight: bold;
+}
