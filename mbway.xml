@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="plugin" group="gurupayment" method="upgrade">
     <name>MBWAY</name>
-    <author>Your Name</author>
-    <authorEmail>your.email@example.com</authorEmail>
+    <author>Shivam Thakur</author>
+    <authorEmail>shivamkathyala@gmail.com</authorEmail>
     <authorUrl>www.yourwebsite.com</authorUrl>
     <creationDate>June 13, 2024</creationDate>
-    <copyright>Your Company</copyright>
+    <copyright>Open Source</copyright>
     <version>1.0.0</version>
     <description>PLG_MBWAY_PAYMENT_CUSTOM</description>
 
